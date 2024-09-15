@@ -14,12 +14,20 @@ run **QubeMPCSetup.m**, this code will setup the State Space Representation of t
 
 **GetTrainSet001.m** The code is used to do prediction shirinkage and generate the training set for NNMPC
 
-**MPCvsSMPC001.m** A example code comparing original MPC and SMPC (MPC with prediction shrinkage technique)
+**MPCvsSMPC001.m** An example code comparing original MPC and SMPC (MPC with prediction shrinkage technique)
 
+**NNnetwork.py** The structure of neuron network used
 
+**PredictionShrinkage.m** An example code illustrating how prediction shirinkage technique work
 
+**TrainingNNMPC.py** The code is used to train a NNMPC using collected dataset
+
+**costfun.m** A cost function used for comparsion in **MPCvsSMPC001.m**
 
 ## 3. RLMPC Training in Simulation
+### 3.1 RL + MPC
+
+
 
 
 ## 4. RLMPC Training in Real World
