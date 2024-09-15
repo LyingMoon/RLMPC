@@ -2,12 +2,14 @@ clear all
 
 % This is the offline data gathered from NNMPC, under the condition of
 % fre=1 and amp=1, and initial state [0,0,0,0]
+% If you want to plot this, put datav1-x4 in this folder
 % ALL SIMULATION
-load datav1.csv;
-load datax1.csv;
-load datax2.csv;
-load datax3.csv;
-load datax4.csv;
+% load datav1.csv;
+% load datax1.csv;
+% load datax2.csv;
+% load datax3.csv;
+% load datax4.csv;
+
 
 load AdBd001Qube.mat;
 load 001MPC4.mat
