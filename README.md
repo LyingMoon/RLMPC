@@ -4,3 +4,9 @@ Model predictive control (MPC) is a powerful control algorithm widely used in ar
 
 ## 1. Set up your MPC (Open 1SetupMPC)
 run **QubeMPCSetup.m**, this code will setup the State Space Representation of the Qube Servo2 Model
+
+## 2. SMPC and NNMPC Training Set Generation
+
+
+
+##
