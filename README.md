@@ -4,7 +4,7 @@ Example code and data for paper **Predictive RL for MPC: Adapting to Model Param
 
 
 ## 1. Set up your MPC
-run **QubeMPCSetup.m**, this code will setup the State Space Representation of the Qube Servo2 Model
+**QubeMPCSetup.m**, this code will setup the State Space Representation of the Qube Servo2 Model
 
 **MPCsuccessful1.slx** is an example simulink model that can run in real world using Qube-Servo 2 Quanser interface, and it can make sure the MPC is working in physical world
 
