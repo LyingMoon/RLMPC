@@ -81,7 +81,8 @@ Example code and data for paper **Predictive RL for MPC: Adapting to Model Param
 
 **TestRLMPC.py**, a code plotting the performance of RLMPC in simulation, making sure the trained network is working
 
+**TimeTest/MPCRuntime.m**, an example code that evaluate the time required for MPC to go through 400000 (human defined) input set
 
-
+**TimeTest/TimeTest.py**, and example code that evaluate the time required for NNMPC, Warm Start RL, RL + MPC to go through 400000 (based on the dataset generated using **MPCRuntime.m**) input set
 
 
