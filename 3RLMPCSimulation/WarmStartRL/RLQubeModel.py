@@ -28,7 +28,7 @@ class DiscreteTimeQubeModel:
         self.state = np.dot(self.A, self.state) + np.dot(self.B, np.array(Input, dtype=float))
         modelstate=self.state.T
 
-        ref1 = np.array([weight*sin(j/10+time) for j in range(0, 6)]).reshape(1, -1)
+        ref1 = np.array([weight*sin(j/10+time+0.01) for j in range(0, 6)]).reshape(1, -1)
         
         #Define the reward function here
         #reward= - 10*(modelstate[0]-ref1[0])**2 - 5*(modelstate[1]-ref2[0])**2 - 5*(modelstate[2]-ref3[0])**2

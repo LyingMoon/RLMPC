@@ -162,11 +162,6 @@ for i in range(4000):  # Iteration for n episode
         # what action it will take
         action = agent.take_action(state)
         
-        # input_tensor = torch.tensor(np.array(state), dtype=torch.float32)
-        # with torch.no_grad(): 
-        #    output = mpc(input_tensor)
-        # voltInput=output.squeeze()
-        
         voltage=-action.item()
         env.write_voltage(voltage)
         
@@ -201,11 +196,11 @@ for i in range(4000):  # Iteration for n episode
         
         # Update the state
         newstate=np.array([x1,x2,x3,x4])
-        ref1t = np.array([weight*sin(j*0.1+time) for j in range(0, 6)])
+        ref1t = np.array([weight*sin(j*0.1+time+Ts) for j in range(0, 6)])
         next_state = np.concatenate((newstate, ref1t))
         
         # Calculate the reward
-        reward = -5 * ((next_state[0] - weight*sin(time))**2) \
+        reward = -5 * ((next_state[0] - weight*sin(time+Ts))**2) \
              -5 * ((next_state[1])**2) \
              -0.5 *((voltage)**2)
              
