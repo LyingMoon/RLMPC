@@ -11,8 +11,8 @@
 ### Installation
 
 ```bash
-git clone <repository-url>
-cd RLMPC
+git clone https://github.com/LyingMoon/rlmpc.git
+cd rlmpc
 conda env create -f environment.yml
 conda activate rlmpc
 pip install -e .
@@ -88,6 +88,7 @@ import numpy as np
 class MySystem(SystemModel):
     def _build_state_space(self):
         # Define: x_dot = A*x + B*u
+        # NOTE: You can define any dynamic model here (nonlinear)
         self.A_cont = np.array([[0, 1], [-2, -3]])
         self.B_cont = np.array([[0], [1]])
         self.A, self.B = self._c2d(self.A_cont, self.B_cont, self.Ts)
