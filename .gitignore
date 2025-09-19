@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+rlmpc_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated data and models
+data/
+results/
+*.pth
+*.pkl
+*.npy
+
+# Jupyter
+.ipynb_checkpoints
